@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Priority Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+ <!-- Splash Screen -->
+    <div id="splash-screen">
+        <img src="prioritiapplogo2.jpg" alt="App Logo" class="logo">
+        <h1 class="app-name">Prioriti</h1>
+    </div>
+    <div class="graph-paper">
+        <div style="display: flex; flex-direction: row; align-items: center; gap: 4px;">
+            <img src="prioritiapplogo2.jpg" alt="App Logo" class="logo" style="width: 20px; height: 20px;">
+            <h1 style="font-size: 1rem;">Prioriti</h1>
+        </div>
+         <!-- Priority Matrix Grid -->
+        <div class="matrix-container">
+            <div class="matrix-item important-urgent">IMPORTANT & URGENT </div>
+            <div class="matrix-item important-not-urgent">IMPORTANT & NOT URGENT</div>
+            <div class="matrix-item not-important-urgent">NOT IMPORTANT & URGENT </div>
+            <div class="matrix-item not-important-not-urgent">NOT IMPORTANT & NOT URGENT</div>
+
+        <!-- Floating Button for Adding Tasks -->
+        <button id="add-task-button">+</button>
+
+        <!-- Modal for Adding Task -->
+        <div id="task-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Task</h2>
+                <form id="task-form">
+                    <input type="text" id="task-title" placeholder="Task Title" required>
+                    <select id="importance">
+                        <option value="High">High Importance</option>
+                        <option value="Low">Low Importance</option>
+                    </select>
+                    <select id="urgency">
+                        <option value="High">High Urgency</option>
+                        <option value="Low">Low Urgency</option>
+                    </select>
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- Notebook Icon for Completed Tasks -->
+     <button id="completed-tasks-button">
+        <h2><span class="notebook"><</span>
+</button>
+<!-- Completed Tasks Section -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notebook Emoji</title>
+<style>
+    .notebook {
+        font-size: 50px;
+    }
+</style>
+</head>
+<body>
+<div id="completed-tasks">
+    <!-- <h2><span class="notebook">&#x1F4D3;</span>Completed Tasks</h2> -->
+    <div id="completed-tasks-list"><h2>Completed Tasks</h2></div>
+</body>
+</div>
+</div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
